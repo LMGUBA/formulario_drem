@@ -31,7 +31,7 @@
                         <label>
                             Correo:
                         </label>
-                        <input class="form-control" type="email" v-model="from_email">
+                        <input class="form-control" type="email" v-model="cc_to">
                         </input>
                     </div>
                     <div class="col-sm-6 col-sm-offset-3 form-group">
@@ -62,7 +62,7 @@
                 data(){
                     return {
                         from_name: '',
-                        from_email: '',
+                        cc_to: '',
                         message: '',
                         subject: '',
                     }
@@ -71,7 +71,7 @@
                     enviar(){
                         let data = {
                             from_name: this.from_name,
-                            from_email: this.from_email,
+                            cc_to: this.from_email,
                             message: this.message,
                             subject: this.subject,
                         };
